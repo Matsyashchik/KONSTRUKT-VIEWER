@@ -137,6 +137,9 @@ router.get(
         if (id === '2') {
             filePath = __dirname + "\\homut.obj"
         }
+        console.log(id)
+        console.log(__dirname)
+        console.log(filePath)
         // смотрим, есть ли такой файл
         fs.access(filePath, fs.constants.R_OK, err => {
             // если произошла ошибка - отправляем статусный код 404

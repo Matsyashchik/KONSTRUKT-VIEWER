@@ -324,6 +324,15 @@ input:-webkit-autofill:focus {
     padding-top: 5px;
 }
 
+.centred-loader.special {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    background: white;
+    height: calc(100% - 64px);
+    z-index: 100000;
+}
 
 
 @media screen and (max-width: 992px) {
@@ -377,5 +386,9 @@ input:-webkit-autofill:focus {
 
     #navbar-wrapper {
         padding-bottom: 54px;
+    }
+
+    .centred-loader.special {
+        height: calc(100% - 54px);
     }
 }
