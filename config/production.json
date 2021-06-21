@@ -1,6 +1,6 @@
 {
-  "port": 5000,
+  "port": 80,
   "jwtSecret": "Lana Rhodes",
   "mongoUri": "mongodb+srv://matsyshchik:19ORcTnXIHfOGBfU@cluster0.4zx47.mongodb.net/MERN?retryWrites=true&w=majority",
-  "baseUrl": "http://localhost:5000"
+  "baseUrl": "http://www.kviewer.ru"
 }

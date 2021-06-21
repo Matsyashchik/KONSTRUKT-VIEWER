@@ -2,7 +2,6 @@ import React, {useState, useEffect, useContext} from 'react';
 import {useHttp} from "../hooks/http.hook";
 import {useMessage} from "../hooks/message.hook";
 import {AuthContext} from "../context/AuthContext";
-import {NavLink} from "react-router-dom";
 
 export const AuthPage = () => {
     const auth = useContext(AuthContext)
@@ -29,13 +28,13 @@ export const AuthPage = () => {
         setForm({...form, [event.target.name]: event.target.value})
     }
 
-    const registerHandler = async () => {
-        try {
-            const data = await request('/api/auth/register', 'POST', {...form})
-            message(data.message)
-        } catch (e) {
-        }
-    }
+    // const registerHandler = async () => {
+    //     try {
+    //         const data = await request('/api/auth/register', 'POST', {...form})
+    //         message(data.message)
+    //     } catch (e) {
+    //     }
+    // }
 
     const loginHandler = async () => {
         try {
@@ -68,7 +67,6 @@ export const AuthPage = () => {
                                     type="email"
                                     name="email"
                                     onChange={changeHandler}
-                                    autoComplete={false}
                                     className="validate white-text" />
                                 <label htmlFor="email">Email</label>
                             </div>

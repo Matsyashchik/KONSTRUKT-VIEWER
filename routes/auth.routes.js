@@ -60,7 +60,7 @@ router.post(
             if (!errors.isEmpty()) {
                 return res.status(404).json({
                     errors: errors.array(),
-                    message: 'Некорректные данные при регистрации'
+                    message: 'Некорректные данные при авторизации'
                 })
             }
 
@@ -71,7 +71,7 @@ router.post(
 
             console.log('User:', user)
             if (!user) {
-                return res.status(400).json({message: 'User not found'})
+                return res.status(400).json({message: 'Пользователь ненайден'})
             }
 
             const isMatch = await bcrypt.compare(password, user.password);
