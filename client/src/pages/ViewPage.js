@@ -144,7 +144,7 @@ export const ViewPage = (props) => {
     return (
         <>
             <div id="model-hider" className='hide' ref={containerRef}></div>
-            <Loader special={loaderRef}/>
+            <Loader special={loaderRef} extra={"special"}/>
             <div id="view-container">
                 <ModelMenu modelName={header[0]}
                            menuRef={menuRef}

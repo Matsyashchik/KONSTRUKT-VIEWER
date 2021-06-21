@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const Loader = ({special}) => {
+export const Loader = ({special, extra}) => {
     return (
-        <div className="centred-loader" ref={special}>
+        <div className={"centred-loader " + extra} ref={special}>
             <div>
             <div className="preloader-wrapper big active">
                 <div className="spinner-layer spinner-blue">
