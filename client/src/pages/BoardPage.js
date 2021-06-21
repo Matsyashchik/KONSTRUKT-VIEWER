@@ -28,10 +28,10 @@ export const BoardPage = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className='center add-user-button'>
-                    <a href="#" className="waves-effect waves-light btn center">Добавить
-                        модель</a>
-                </div>
+                {/*<div className='center add-user-button'>*/}
+                {/*    <a href="#" className="waves-effect waves-light btn center">Добавить*/}
+                {/*        модель</a>*/}
+                {/*</div>*/}
             {/*<form>*/}
             {/*    <div className="input-field">*/}
             {/*        <input id="search" type="search" required />*/}
