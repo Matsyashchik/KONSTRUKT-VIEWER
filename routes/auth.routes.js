@@ -132,10 +132,10 @@ router.get(
         let filePath = '';
         const id = req.params.id;
         if (id === '1') {
-            filePath = __dirname + "\\букса.obj"
+            filePath = __dirname + "/букса.obj"
         }
         if (id === '2') {
-            filePath = __dirname + "\\homut.obj"
+            filePath = __dirname + "/homut.obj"
         }
         console.log(id)
         console.log(__dirname)
