@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "jwtSecret": "Lana Rhodes",
+  "mongoUri": "mongodb+srv://matsyshchik:19ORcTnXIHfOGBfU@cluster0.4zx47.mongodb.net/MERN?retryWrites=true&w=majority"
+}
